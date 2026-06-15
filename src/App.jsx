@@ -31,7 +31,7 @@ function App() {
  }, [length, numberAllowed, charAllowed, passwordGenerator])
   return (
     <>
-      <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-4 my-8 text-orange-500 bg-[#d9ffbb]">
+      <div className="w-full max-w-xl mx-auto shadow-md rounded-lg px-4 py-4 my-8 text-orange-500 bg-[#d9ffbb]">
         <div className="flex shadow-md rounded-lg overflow-hidden mb-4">
         <input type="text"
         value={password}
@@ -54,7 +54,7 @@ function App() {
           value={length}
           className="cursor-pointer"
           onChange={(e) => {setLength(e.target.value)}}/>
-          <label>Length: {length}</label>
+          <label className="text-xl">Length: {length}</label>
         </div>
         <div className='flex items-center gap-x-1 p-2'>
           <input type="checkbox" 
@@ -66,7 +66,7 @@ function App() {
             setNumberAllowed((prev) => !prev);
           }}
             />
-          <label htmlFor="numberInput">Numbers</label> 
+          <label htmlFor="numberInput" className="text-xl">Numbers</label> 
         </div>
         <div className='flex items-center gap-x-1 p-2'>
           <input type="checkbox" 
@@ -76,7 +76,7 @@ function App() {
             setCharAllowed((prev) => !prev);
           }}
             />
-          <label htmlFor="characterInput">Characters</label> 
+          <label htmlFor="characterInput" className="text-xl">Characters</label>  
         </div>
       </div>
       </div>
