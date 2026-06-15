@@ -47,7 +47,7 @@ function App() {
         </button>
       </div>
       <div className="flex text-sm gap=x-2">
-        <div className='flex items-center gap-x-1'>
+        <div className='flex items-center gap-x-1 p-2'>
           <input type="range" 
           min={6}
           max={100}
@@ -56,7 +56,7 @@ function App() {
           onChange={(e) => {setLength(e.target.value)}}/>
           <label>Length: {length}</label>
         </div>
-        <div className='flex items-center gap-x-1'>
+        <div className='flex items-center gap-x-1 p-2'>
           <input type="checkbox" 
           defaultChecked={numberAllowed}
           id="numberInput"
@@ -68,7 +68,7 @@ function App() {
             />
           <label htmlFor="numberInput">Numbers</label> 
         </div>
-        <div className='flex items-center gap-x-1'>
+        <div className='flex items-center gap-x-1 p-2'>
           <input type="checkbox" 
           defaultChecked={charAllowed}
           id="characterInput"
